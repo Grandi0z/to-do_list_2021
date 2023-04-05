@@ -1,0 +1,121 @@
+
+:root {
+    --dark:#374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --gray: #687280;
+    --light: #EEE;
+    --pink:#EC4899;
+    --purple: #885CF6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fira sans', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--dark);
+  color: #fff;
+}
+
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+#form_new_task {
+    display: flex;
+}
+
+input, button {
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+#input_new_task {
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    color: var(--light);
+}
+
+#input_new_task::placeholder {
+    color: var(--gray);
+}
+
+#input_new_submit {
+    color: var(--pink);
+    background-image: linear-gradient(to right, var(--pink), 
+    var(--purple));
+    font-size: 1.25rem;
+    font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#input_new_submit:hover {
+    opacity: 0.8;
+}
+
+#input_new_submit:active {
+    opacity: 0.6;
+}
+
+main {
+    display: flex;
+    padding: 1rem 2rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#task-list {
+    padding: 1rem;
+}
+
+#task-list h2 {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+#tasks #addTask {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#tasks #addTask #content .taskDescription {
+    color: var(--light);
+    width: 100%;
+    display: block;
+    font-size: 1.125rem;
+}
+
+#tasks #addTask #content .taskDescription:not(:read-only) {
+    color: var(--pink);
+}
+
+#tasks #addTask #action {
+    margin: 0 --0.05rem;
+}
+
+
+
