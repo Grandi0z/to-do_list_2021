@@ -76,7 +76,7 @@ input, button {
 
 main {
     display: flex;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 0 0;
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
@@ -84,6 +84,7 @@ main {
 
 #task-list {
     padding: 1rem;
+    width: 100%;
 }
 
 #task-list h2 {
@@ -107,6 +108,7 @@ main {
     width: 100%;
     display: block;
     font-size: 1.125rem;
+    transition: 0.4s;
 }
 
 #tasks #addTask #content .taskDescription:not(:read-only) {
@@ -114,8 +116,35 @@ main {
 }
 
 #tasks #addTask #action {
-    margin: 0 --0.05rem;
+    display: flex;
+    margin: 0 -0.05rem;
 }
 
+#action button {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s
+}
 
+#action button:hover {
+    opacity: 0.8;
+}
+
+#action button:active {
+    opacity: 0.6;
+}
+
+#edit {
+    color: var(--pink);
+    background-image: linear-gradient(to right, var(--pink), 
+    var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#action #delete {
+    color: crimson;
+}
 
