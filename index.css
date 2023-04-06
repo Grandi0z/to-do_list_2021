@@ -82,19 +82,19 @@ main {
     margin: 0 auto;
 }
 
-#task-list {
+#task_list {
     padding: 1rem;
     width: 100%;
 }
 
-#task-list h2 {
+#task_list h2 {
     font-size: 1.25rem;
     font-weight: 300;
     color: var(--gray);
     margin-bottom: 1rem;
 }
 
-#tasks #addTask {
+#tasks #task {
     display: flex;
     justify-content: space-between;
     background-color: var(--darkest);
@@ -103,7 +103,7 @@ main {
     margin-bottom: 1rem;
 }
 
-#tasks #addTask #content .taskDescription {
+#tasks #task #content .taskDescription {
     color: var(--light);
     width: 100%;
     display: block;
@@ -111,11 +111,11 @@ main {
     transition: 0.4s;
 }
 
-#tasks #addTask #content .taskDescription:not(:read-only) {
+#tasks #task #content .taskDescription:not(:read-only) {
     color: var(--pink);
 }
 
-#tasks #addTask #action {
+#tasks #task #action {
     display: flex;
     margin: 0 -0.05rem;
 }
